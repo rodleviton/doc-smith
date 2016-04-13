@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Doc Smith - Components</title>
+
+	<script src="assets/docs.bundle.js"></script>
+	<script src="assets/theme.bundle.js"></script>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet' type='text/css'>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target=".sidebar" class="sticky" data-offset="200">
+
+	<header class="site-header sticky">
+
+		<!-- Top navbar & branding -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+
+				<!-- Toggle buttons and brand -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+						<span class="glyphicon glyphicon-option-vertical"></span>
+					</button>
+
+					<button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<!-- END Toggle buttons and brand -->
+
+				<!-- Top navbar -->
+				<div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/index.html">Overview</a></li>
+						<li><a href="/elements.html">Elements</a></li>
+						<li><a href="/components.html">Components</a></li>
+						<li><a href="/accessibility.html">Accessibility</a></li>
+						<li><a href="/accessibility.html">Accessibility</a></li>
+					</ul>
+				</div>
+				<!-- END Top navbar -->
+
+			</div>
+		</nav>
+		<!-- END Top navbar & branding -->
+
+	</header>
+	<main class="container-fluid" ng-app="app">
+		<div class="row">
+
+			<!-- Sidebar -->
+			<aside class="col-lg-2 col-md-3 col-sm-3 sidebar">
+
+				<ul class="sidenav nav dropable sticky">
+
+					<li><a href="index.html">Overview</a></li>
+
+					<li>
+						<a href="/elements.html">Elements</a>
+					</li>
+
+					<li>
+						<a class="active" href="/components.html">Components</a>
+						<ul>
+							<li><a href="#componentAlpha">componentAlpha</a></li>
+							<li><a href="#componentBeta">componentBeta</a></li>
+							<li><a href="#componentDelta">componentDelta</a></li>
+							<li><a href="#componentEpsilon">componentEpsilon</a></li>
+							<li><a href="#componentGamma">componentGamma</a></li>
+						</ul>
+					</li>
+
+					<li><a href="accessibility.html">Accessibility</a></li>
+
+				</ul>
+			</aside>
+			<!-- END Sidebar -->
+
+			<!-- Main content -->
+			<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main">
+				<section>
+					<h2 id="simple-code-blocks">Components</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed luctus arcu. Etiam consequat magna lectus. Donec condimentum tellus id nunc tristique aliquet. Suspendisse vitae
+						lobortis purus. Mauris sed accumsan elit. Praesent sed elementum magna.</p>
+
+					<h3 id="componentAlpha">componentAlpha</h3>
+					<p>This is demo component alpha</p>
+					<div class="code-snippet">
+
+						<div class="code-preview">
+							<component-alpha></component-alpha>
+						</div>
+
+						<pre><code class="language-markup line-numbers">&#x3C;!-- using element directives --&#x3E;
+&#x3C;component-alpha&#x3E;&#x3C;/component-alpha&#x3E;</code></pre>
+					</div>
+
+					<h3 id="componentBeta">componentBeta</h3>
+					<p>This is demo component beta</p>
+					<div class="code-snippet">
+
+						<div class="code-preview">
+							<component-beta></component-beta>
+						</div>
+
+						<pre><code class="language-markup line-numbers">&#x3C;!-- using element directives --&#x3E;
+&#x3C;component-beta&#x3E;&#x3C;/component-beta&#x3E;</code></pre>
+					</div>
+
+					<h3 id="componentDelta">componentDelta</h3>
+					<p>This is demo component delta</p>
+					<div class="code-snippet">
+
+						<div class="code-preview">
+							<component-delta></component-delta>
+						</div>
+
+						<pre><code class="language-markup line-numbers">&#x3C;!-- using element directives --&#x3E;
+&#x3C;component-delta&#x3E;&#x3C;/component-delta&#x3E;</code></pre>
+					</div>
+
+					<h3 id="componentEpsilon">componentEpsilon</h3>
+					<p>This is demo component epsilon</p>
+					<div class="code-snippet">
+
+						<div class="code-preview">
+							<component-epsilon></component-epsilon>
+						</div>
+
+						<pre><code class="language-markup line-numbers">&#x3C;!-- using element directives --&#x3E;
+&#x3C;component-epsilon&#x3E;&#x3C;/component-epsilon&#x3E;</code></pre>
+					</div>
+
+					<h3 id="componentGamma">componentGamma</h3>
+					<p>This is demo component gamma</p>
+					<div class="code-snippet">
+
+						<div class="code-preview">
+							<component-gamma></component-gamma>
+						</div>
+
+						<pre><code class="language-markup line-numbers">&#x3C;!-- using element directives --&#x3E;
+&#x3C;component-gamma&#x3E;&#x3C;/component-gamma&#x3E;</code></pre>
+					</div>
+
+				</section>
+			</article>
+			<!-- END Main content -->
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<p>Copyright &copy; 2016. All right reserved</p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<ul class="footer-menu">
+						<li><a href="page_changelog.html">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END Footer -->
+
+</body>
+
+</html>

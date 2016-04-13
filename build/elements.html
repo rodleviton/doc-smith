@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Doc Smith - Elements</title>
+
+	<script src="assets/docs.bundle.js"></script>
+	<script src="assets/theme.bundle.js"></script>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet' type='text/css'>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target=".sidebar" class="sticky" data-offset="200">
+
+	<header class="site-header sticky">
+
+		<!-- Top navbar & branding -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+
+				<!-- Toggle buttons and brand -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+						<span class="glyphicon glyphicon-option-vertical"></span>
+					</button>
+
+					<button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<!-- END Toggle buttons and brand -->
+
+				<!-- Top navbar -->
+				<div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/index.html">Overview</a></li>
+						<li><a href="/elements.html">Elements</a></li>
+						<li><a href="/components.html">Components</a></li>
+						<li><a href="/accessibility.html">Accessibility</a></li>
+						<li><a href="/accessibility.html">Accessibility</a></li>
+					</ul>
+				</div>
+				<!-- END Top navbar -->
+
+			</div>
+		</nav>
+		<!-- END Top navbar & branding -->
+
+	</header>
+	<main class="container-fluid">
+		<div class="row">
+
+			<!-- Sidebar -->
+			<aside class="col-lg-2 col-md-3 col-sm-3 sidebar">
+
+				<ul class="sidenav nav dropable sticky">
+
+					<li><a href="index.html">Overview</a></li>
+
+					<li>
+						<a class="active" href="/elements.html">Elements</a>
+						<ul>
+							<li><a href="#button">Button</a></li>
+							<li><a href="#tabs">Tabs</a></li>
+							<li><a href="#media">Media</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="/components.html">Components</a>
+					</li>
+
+					<li><a href="accessibility.html">Accessibility</a></li>
+
+				</ul>
+			</aside>
+			<!-- END Sidebar -->
+
+			<!-- Main content -->
+			<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main">
+				<section>
+					<h2>Elements</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed luctus arcu. Etiam consequat magna lectus. Donec condimentum tellus id nunc tristique aliquet. Suspendisse vitae
+						lobortis purus. Mauris sed accumsan elit. Praesent sed elementum magna.</p>
+
+					<h3 id="button">Button</h3> This is a button element
+					<div class="code-window">
+						<div class="code-preview">
+							<button class="btn btn-default">Button</button>
+						</div>
+
+						<pre class="line-numbers">
+<code class="language-markup">
+&lt;p&gt;This is a normal paragraph without any contextual classes.&lt;/p&gt;
+&lt;p class=&quot;text-primary&quot;&gt;A paragraph with .text-primary class.&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;A paragraph with .text-success class.&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;A paragraph with .text-info class.&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;A paragraph with .text-warning class.&lt;/p&gt;
+&lt;p class=&quot;text-danger&quot;&gt;A paragraph with .text-danger class.&lt;/p&gt;
+&lt;p class=&quot;text-purple&quot;&gt;A paragraph with .text-purple class.&lt;/p&gt;
+&lt;p class=&quot;text-teal&quot;&gt;A paragraph with .text-teal class.&lt;/p&gt;
+&lt;p class=&quot;text-gray&quot;&gt;A paragraph with .text-gray class.&lt;/p&gt;
+&lt;p class=&quot;text-dark&quot;&gt;A paragraph with .text-dark class.&lt;/p&gt;
+</code>
+</pre>
+					</div>
+					<h3 id="tabs">Tabs</h3>
+
+					<div class="code-window">
+						<div class="code-preview">
+							<table class="table">
+								<caption>Optional table caption.</caption>
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>First Name</th>
+										<th>Last Name</th>
+										<th>Username</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<pre class="line-numbers">
+<code class="language-markup">
+&lt;table class=&quot;table&quot;&gt;
+  ...
+&lt;/table&gt;
+</code>
+</pre>
+					</div>
+					<h3 id="media">Media</h3>
+
+					<div class="code-window">
+						<div class="code-preview">
+							<div>
+								<div class="media">
+									<div class="media-left">
+										<a href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTQwNTRiYjZmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NDA1NGJiNmY4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+											data-holder-rendered="true" style="width: 64px; height: 64px;"> </a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+										condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left">
+										<a href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTQwNTRiOTY1ZiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NDA1NGI5NjVmIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+											data-holder-rendered="true" style="width: 64px; height: 64px;"> </a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+										condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+										<div class="media">
+											<div class="media-left">
+												<a href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTQwNTRiN2RlZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NDA1NGI3ZGVlIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+													data-holder-rendered="true" style="width: 64px; height: 64px;"> </a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">Nested media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+												Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-body">
+										<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+									</div>
+									<div class="media-right">
+										<a href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTQwNTRiOGIyOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NDA1NGI4YjI4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+											data-holder-rendered="true" style="width: 64px; height: 64px;"> </a>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left">
+										<a href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTQwNTRiYWEzZiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NDA1NGJhYTNmIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+											data-holder-rendered="true" style="width: 64px; height: 64px;"> </a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+									</div>
+									<div class="media-right">
+										<a href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTQwNTRiYWQ3YiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NDA1NGJhZDdiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+											data-holder-rendered="true" style="width: 64px; height: 64px;"> </a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<pre class="line-numbers">
+<code class="language-markup">
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;media-object&quot; src=&quot;...&quot; alt=&quot;...&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+					</div>
+				</section>
+			</article>
+			<!-- END Main content -->
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<p>Copyright &copy; 2016. All right reserved</p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<ul class="footer-menu">
+						<li><a href="page_changelog.html">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END Footer -->
+
+</body>
+
+</html>

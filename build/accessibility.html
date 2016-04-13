@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Doc Smith - Accessibility</title>
+
+	<script src="assets/docs.bundle.js"></script>
+	<script src="assets/theme.bundle.js"></script>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet' type='text/css'>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target=".sidebar" class="sticky" data-offset="200">
+
+	<header class="site-header sticky">
+
+		<!-- Top navbar & branding -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+
+				<!-- Toggle buttons and brand -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+						<span class="glyphicon glyphicon-option-vertical"></span>
+					</button>
+
+					<button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<!-- END Toggle buttons and brand -->
+
+				<!-- Top navbar -->
+				<div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/index.html">Overview</a></li>
+						<li><a href="/elements.html">Elements</a></li>
+						<li><a href="/components.html">Components</a></li>
+						<li><a href="/accessibility.html">Accessibility</a></li>
+						<li><a href="/accessibility.html">Accessibility</a></li>
+					</ul>
+				</div>
+				<!-- END Top navbar -->
+
+			</div>
+		</nav>
+		<!-- END Top navbar & branding -->
+
+	</header>
+	<main class="container-fluid">
+		<div class="row">
+
+			<!-- Sidebar -->
+			<aside class="col-lg-2 col-md-3 col-sm-3 sidebar">
+
+				<ul class="sidenav nav dropable sticky">
+
+					<li>
+						<a href="index.html">Overview</a>
+					</li>
+
+					<li>
+						<a href="/elements.html">Elements</a>
+					</li>
+
+					<li>
+						<a href="/components.html">Components</a>
+					</li>
+
+					<li>
+						<a href="accessibility.html">Accessibility</a>
+					</li>
+
+				</ul>
+			</aside>
+			<!-- END Sidebar -->
+
+			<!-- Main content -->
+			<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main">
+				<section>
+					<h2>Accessibility</h2>
+					<h4 id="page-headings">Page Headings</h4>
+					<p>Modules that do not have full control of the html document cannot manipulate the <code>&lt;title&gt;&lt;/title&gt;</code> tag attribute. The main heading <em>(H1)</em> within these
+						modules should have the attribute <code>tabindex=&quot;-1&quot;</code> added to ensure it is announced on page transition.</p>
+					<h3 id="labels">Labels</h3>
+					<p>Some field labels require enhanced descriptions to allow for better screen readability. To achieve this we can update the language definition file for labels to include screen
+						reader only text.</p>
+					<pre><code class="lang-js">{
+  SELECT_ACCOUNT: &#39;Select &lt;span class=&quot;sr-only&quot;&gt;for&lt;/span&gt; account&#39;
+}
+</code></pre>
+					<pre><code class="lang-html">&lt;div class=&quot;form-group-horizontal form-group-md form-group&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;accountFrom&quot; translate=&quot;{{&#39;LABEL.SELECT_ACCOUNT&#39;}}&quot;&gt;&lt;/label&gt;
+  &lt;div class=&quot;control-row&quot;&gt;
+    &lt;select id=&quot;accountFrom&quot; name=&quot;accountFrom&quot; ng-model=&quot;ft.data.accountFrom&quot; ng-options=&quot;item.label for item in ft.mockData.accounts track by item.label&quot; class=&quot;form-control&quot;&gt;
+      &lt;option value=&quot;&quot;&gt;{{&#39;PLACEHOLDER.SELECT&#39; | translate}}&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+					<h3 id="abbreviations">Abbreviations</h3>
+					<p>Labels and body copy that has been abvbreviated should use the html <code>&lt;abbr&gt;&lt;/abbr&gt;</code> attribute to provide further information to users and screen readers.</p>
+					<pre><code class="lang-html">&lt;abbr title=&quot;Number&quot;&gt;No.&lt;/abbr&gt;
+</code></pre>
+					<h3 id="dynamic-content">Dynamic Content</h3>
+					<p>Some dynamically added content may need to be announced via a screen reader. For example loaders and inline alert messages. The suggested pattern for doing this is to add the <code>aria-live=&quot;polite&quot;</code>.
+						This will enable screen readers to announce the dynamically added content.</p>
+					<p><strong>note</strong> Only one aria-live region should be present at any one time.</p>
+					<p>e.g.</p>
+					<pre><code class="lang-html">&lt;span ng-if=&quot;$ctrl.states.verificationInProgress&quot; aria-live=&quot;polite&quot;&gt;
+  &lt;img src=&quot;img/loading.svg&quot; alt=&quot;Loading in progress&quot; /&gt;
+  Checking
+&lt;/span&gt;
+</code></pre>
+					<h2 id="resources">Resources</h2>
+					<p><a href="&#39;/assets/docs/general-accessibility-requirements.docx">General Accessibility Requirements</a></p>
+					<p><a href="&#39;/assets/docs/Accessibility-DEV-Requirements.docx">Accessibility Developement Guidelines</a></p>
+
+				</section>
+			</article>
+			<!-- END Main content -->
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<p>Copyright &copy; 2016. All right reserved</p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<ul class="footer-menu">
+						<li><a href="page_changelog.html">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END Footer -->
+
+</body>
+
+</html>

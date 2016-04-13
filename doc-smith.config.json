@@ -1,0 +1,25 @@
+{
+  "source": "./src",
+  "destination": "./build",
+  "title": "docsmith",
+  "url": "http://docsmith.com",
+  "collections": {
+    "pages": {
+      "pattern": "src/*.html",
+      "sortBy": "priority"
+    },
+    "components": {
+      "pattern": "src/components/*.html"
+    },
+    "elements": {
+      "pattern": "src/patterns/elements/*.html",
+      "sortBy": "priority"
+    }
+  },
+  "plugins": {
+    "ngDocs": {
+      "pattern": "node_modules/my_components/components/**/*.js",
+      "destination": "src/components"
+    }
+  }
+}
