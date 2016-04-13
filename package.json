@@ -1,6 +1,6 @@
 {
   "name": "doc-smith",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "author": "Rod Leviton",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "bootstrap-sass": "^3.3.6",
     "canonical-path": "0.0.2",
     "css-loader": "^0.23.1",
@@ -48,8 +48,5 @@
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.12.15"
-  },
-  "dependencies": {
-
   }
 }
