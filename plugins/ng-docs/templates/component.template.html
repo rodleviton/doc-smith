@@ -1,0 +1,23 @@
+---
+title: {$ doc.name $}
+collection: components
+---
+
+{% block body %}
+<h3 id="{$ doc.name $}">{$ doc.name $}</h3>
+<p>{$ doc.description $}</p>
+<div class="code-snippet">
+  
+  {% if doc.examples.length -%}
+  {%- for example in doc.examples %}
+  <div class="code-preview">
+    {$ example $}
+  </div>
+  {%- endfor %}
+  {%- endif %}
+
+  {% if doc.usage -%}
+  <pre><code class="language-markup">{$ doc.usage $}</code></pre>
+  {%- endif %}
+</div>
+{% endblock %}

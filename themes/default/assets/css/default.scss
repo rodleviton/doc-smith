@@ -1,0 +1,67 @@
+/*
+ ... Table of content ...
+ ------------------------
+ 01. Content
+ 02. Header
+ 03. Footer
+ 04. Sidebar
+ 05. Typography
+ 06. Labels
+ 07. Alerts
+ 08. Buttons
+ 09. Tables
+ 10. Table of contents
+ 11. FAQ
+ 12. Tab
+ 13. Code
+ 14. Steps
+ 15. Views
+ 16. Color palette
+ 17. Promo
+ 18. Files
+ 19. Media
+ 20. Banner
+ 21. Carousel
+ 22. Jumbotron
+ 23. Breadcrumbs
+ 24. Pagination
+ 25. Requirements
+ ------------------------
+ */
+
+$icon-font-path: '../../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+@import '../../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Core CSS
+@import "content";
+@import "header";
+@import "footer";
+@import "sidebar";
+@import "typography";
+@import "labels";
+@import "alerts";
+@import "buttons";
+@import "tables";
+
+// Components
+@import "toc";
+@import "faq";
+@import "tab";
+@import "code";
+@import "step";
+@import "views";
+@import "color";
+@import "promo";
+@import "files";
+@import "media";
+@import "banner";
+@import "carousel";
+@import "jumbotron";
+@import "breadcrumb";
+@import "pagination";
+@import "requirements";

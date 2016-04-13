@@ -1,0 +1,52 @@
+    {{> header}}
+
+    <main class="container-fluid">
+      <div class="row">
+
+        <!-- Sidebar -->
+        <aside class="col-lg-2 col-md-3 col-sm-3 sidebar">
+
+          <ul class="sidenav dropable sticky">
+
+            <li><a href="index.html">Overview</a></li>
+
+            <li>
+              <a class="active" href="/elements.html">Elements</a>
+              <ul>
+                {{#each elements}}
+                  <li><a href="#{{path.name}}">{{title}}</a></li>
+                {{/each}}
+              </ul>
+            </li>
+
+            <li>
+              <a href="/components.html">Components</a>
+            </li>
+
+            <li><a href="accessibility.html">Accessibility</a></li>
+
+          </ul>
+        </aside>
+        <!-- END Sidebar -->
+
+        <!-- Main content -->
+        <article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main">
+          <section>
+            <h2>Elements</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed luctus arcu. Etiam consequat magna lectus. Donec condimentum tellus id nunc tristique aliquet. Suspendisse vitae lobortis purus. Mauris sed accumsan elit. Praesent sed elementum magna.</p>
+
+            {{#each elements}}
+              <h3 id="element-{{title}}">{{title}}</h3>
+              {{description}}
+              <div class="code-window">
+                {{{contents}}}
+              </div>
+            {{/each}}
+          </section>
+        </article>
+        <!-- END Main content -->
+
+      </div>
+    </main>
+
+    {{> footer}}
