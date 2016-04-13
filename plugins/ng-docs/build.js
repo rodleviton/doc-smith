@@ -1,6 +1,18 @@
 // Canonical path provides a consistent path (i.e. always forward slashes) across different OSes
 var path = require('canonical-path');
+var fs = require('fs');
+var basePath = path.resolve(__dirname, '../../../../');
+
 var Package = require('dgeni').Package;
+
+////////////////////////////////////////////////////////////
+// LOAD DOC-SMITH CONFIG
+////////////////////////////////////////////////////////////
+if (!fs.readFileSync('./doc-smith.config.json')) {
+  return;
+}
+
+var config = require(basePath + '/doc-smith.config.json');
 
 // Create and export a new Dgeni package called docs-platform. This package depends upon
 // the jsdoc and nunjucks packages defined in the dgeni-packages npm module.
@@ -23,7 +35,7 @@ module.exports = new Package('docs-platform', [
     // Specify collections of source files that should contain the documentation to extract
     readFilesProcessor.sourceFiles = [{
       // Process all js files in `src` and its subfolders ...
-      include: '_data/components/**/*.js',
+      include: config.plugins.ngDocs.pattern,
       // ... except for this one!
       // exclude: 'src/do-not-read.js',
       // When calculating the relative path to these files use this as the base path.
@@ -41,7 +53,7 @@ module.exports = new Package('docs-platform', [
     ];
 
     // Specify where the writeFilesProcessor will write our generated doc files
-    writeFilesProcessor.outputFolder = 'src/components';
+    writeFilesProcessor.outputFolder = config.plugins.ngDocs.destination;
   })
   .config(function (computePathsProcessor, createDocMessage) {
     computePathsProcessor.pathTemplates.push({
